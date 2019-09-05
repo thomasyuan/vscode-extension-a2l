@@ -1,0 +1,35 @@
+{
+    "name": "a2l",
+    "displayName": "a2l",
+    "description": "A2L support for Visual Studio Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "a2l",
+                "aliases": [
+                    "A2L",
+                    "a2l"
+                ],
+                "extensions": [
+                    ".a2l",
+                    ".a2lp"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "a2l",
+                "scopeName": "source.a2l",
+                "path": "./syntaxes/a2l.tmLanguage.json"
+            }
+        ]
+    }
+}
